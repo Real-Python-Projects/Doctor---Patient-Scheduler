@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 import os
-import django_heroku
+import django_on_heroku
 import dj_database_url
 from pathlib import Path
 from decouple import config
@@ -37,7 +37,7 @@ SECRET_KEY = 'django-insecure-ya9$(uyvrlv2%2t68+*7rf@31p4+-b%%9b3afxt_m8h)j=bl%8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['doctorsappointment1.herokuapp.com']
 
 
 # Application definition
@@ -147,5 +147,5 @@ NPM_DESTINATION_PREFIX = 'js/lib'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+django_on_heroku.settings(locals())
 
